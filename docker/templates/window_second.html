@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title> </title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel='stylesheet' type='text/css'>
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+
+
+  
+   <link rel="stylesheet" href="{{ url_for('static', path='css/window_second.css') }}" />
+
+
+
+    <meta charset="utf-8">
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+
+
+
+
+
+</head>
+
+<body >
+
+
+    <h3   style = ' text-align:center; color: #1E90FF; font-size: 50px; margin:10px auto;'> Crop and extract text fields from your documents   </h3>
+    <h3   style = ' text-align:center; color: #f0f8ff; font-size: 30px; margin:10px auto;'> This app helps you to extract informations from any scanned document</h3>
+
+
+
+    <form  id="file-upload-form"  action="/uploader_"  enctype="multipart/form-data" method="post" style = 'display:flex; margin : 100px auto ; ' >
+
+      <section class="input-content" style = ' width : 50%; height: 60%;  margin:10px auto;  background-color: transparent;  ' >
+      
+ 
+      
+          <!-- Upload  -->
+          <div class="uploader"  style = '   margin:-30px auto;  width : 70%; height: 5%;   '>
+      
+            <h3 style = '   text-align:center; color: #f0f8ff; text-decoration: underline; margin:0px auto; ' >Upload your document </h3>
+            <p class="lead" style = ' text-align:center ; color: #f0f8ff; font-size: 13px; '>All document extensions are acceptable </p>
+      
+
+      
+            <input id="file_1" type="file" name="file_1" required  />
+      
+            <label for="file_1" id="file-drag">
+            <img id="file-image" src="#" alt="Preview" class="hidden">
+            <div id="start">
+              <i class="fa fa-download" aria-hidden="true"></i>
+              <div>Select a file or drag here</div>
+              <div id="notimage" class="hidden">Please select an image</div>
+              <span id="file-upload-btn" class="btn btn-primary">Select a file</span>
+            </div>
+            <div id="response" class="hidden">
+              <div id="messages"></div>
+              <progress class="progress" id="file-progress" value="0">
+                <span>0</span>%
+              </progress>
+            </div>
+            </label>
+       
+
+
+
+            <input type="submit" value="Analyser" style = '  display:flex;   width : 40%; height: 10%; margin:5px auto; ' />
+
+
+      
+      </div>
+      
+      </section>
+      </form><!-- container -->
+      
+      
+      
+      
+
+
+
+
+
+
+ 
+    <div class="img1"  > <img src="{{ url_for('static',path='css/anass.jpg') }}" style = ' display:flex;   width : 140px; height: 160px; margin: auto;   border-radius: 50%; border: 5px solid #555; '> </div>
+    <h3   style = ' text-align:center; color: #f0f8ff; font-size: 20px; margin: 10px auto;  '>  By MAJJI Anass</h3>
+    <h3   style = ' text-align:center; color: #f0f8ff; font-size: 20px; margin: auto;  '>  Data Scientist </h3>
+
+</body>
+<script  src="{{url_for('static', path='window_second.js')}}"></script>
+</html>
+
