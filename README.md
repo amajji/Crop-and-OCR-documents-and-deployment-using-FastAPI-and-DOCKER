@@ -35,9 +35,9 @@ we tested the model on 300 tax notices. The SIFT method does not crop all docume
 
 
 <p float="left">
-  <img src="images/1__1_v2.png" width="300" />
+  <img src="images/1__1_v2.png" width="350" />
     <img src="images/fleche_1.png" width="100" /> 
-  <img src="images/corners_v2.png" width="300" /> 
+  <img src="images/corners_v2.png" width="350" /> 
 
 
 </p>
