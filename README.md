@@ -46,7 +46,7 @@ below the demonstration of the webapp
 
 
 
-we tested the model on 300 tax notices. The SIFT method does not crop all documents, especially when the scans are not of a good quality, while the second script which is based on the kmeans algorithm crops and extracts the text fields from any document. 
+we tested the model on 300 tax notices. The SIFT method does not crop all documents, especially when the scans are not in a good quality, while the second script which is based on the kmeans algorithm crops and extracts the text fields from any document. 
 
 
 <p float="left">
