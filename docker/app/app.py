@@ -14,6 +14,16 @@ from fastapi.templating import Jinja2Templates
 import numpy as np
 from pdf2image import convert_from_path, convert_from_bytes
 
+from fastapi.logger import logger
+import logging
+
+
+
+
+
+
+
+
 try:
     from PIL import Image
 except ImportError:
@@ -29,6 +39,15 @@ app = FastAPI()
 templates = Jinja2Templates(directory="templates")
 app.mount("/static", StaticFiles(directory="static"), name="static")
 settings = GETPATH()
+
+
+gunicorn_logger = logging.getLogger('gunicorn.error')
+logger.handlers = gunicorn_logger.handlers
+if __name__ != "main":
+    logger.setLevel(gunicorn_logger.level)
+else:
+    logger.setLevel(logging.DEBUG)
+
 
 
 def centroid_histogram(clt):
@@ -191,6 +210,8 @@ def cropp_image_kmeans(filename, file_path, uploader_path):
     output :
         - the extracted image of the document
     """
+    # Output text 
+    text = ""
 
     # Read the image and transform it to HSV color space
     image = cv2.imread(file_path)
@@ -406,7 +427,7 @@ def cropp_image_kmeans(filename, file_path, uploader_path):
         print("Pytesseract failed !")
 
     # Get the output
-    text = str(pytesseract.image_to_string(result_finale, config="--psm 6"))
+    #text = str(pytesseract.image_to_string(result_finale, config="--psm 6"))
 
     return result_finale, text
 
@@ -478,4 +499,4 @@ def Acceuil(request: Request):
 
 # Run the application
 if __name__ == "__main__":
-    uvicorn.run(app)
+    uvicorn.run(app, debug=True)

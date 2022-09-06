@@ -25,7 +25,22 @@ The repository contains the following files & directories:
 - **images directory:** The folder contains the images used on the notebook.
 
 
-![](last_gif.gif)
+
+## :collision: demonstration 
+
+To launch the deployment of the webapp with docker, type the following commands : 
+
+
+ - docker build -t webapp_ocr .   : to build the docker image
+
+ - docker run -d -p 8000:80 webapp_ocr:latest  : to launch the container based on our image
+
+ If we visit http://127.0.0.1:8000/, we'll get our webapp deployed.
+
+
+below the demonstration of the webapp
+
+![](images/gif.gif)
 
 ## :chart_with_upwards_trend: Performance & results
 
