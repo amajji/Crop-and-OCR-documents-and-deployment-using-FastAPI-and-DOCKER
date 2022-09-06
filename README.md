@@ -9,7 +9,7 @@ This project aims to implement two algorithms to crop and extract text fields fr
 - The first technique is a SIFT model (scale-invariant feature transform), a model used to identify similar elements between different images.
 
 
-- The second is a model based on Kmeans for clusturing to segment the image into many blocs/objects, then we detect the countour's document and rotate it based on its letter orientation. 
+- The second is a model based on Kmeans for clusturing to segment the image into many blocs/objects, and the openCV packages to detect the countour's document and rotate it based on its letter orientation. 
 
  </br>
 
