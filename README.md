@@ -26,7 +26,7 @@ The repository contains the following files & directories:
 
 
 
-## :collision: demonstration 
+## :collision: Demonstration 
 
 To launch the deployment of the webapp with docker, type the following commands : 
 
