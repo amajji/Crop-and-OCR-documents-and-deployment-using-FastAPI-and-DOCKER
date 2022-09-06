@@ -8,32 +8,38 @@ Data scientist | [Anass MAJJI](https://www.linkedin.com/in/anass-majji-729773157
 ***
 
 ## :monocle_face: Description
-- This project aims to implement an algorithm to crop and extract text fields from any document, and deployment in a web app using FastAPI and DOCKER 
-multi-class classification model. we have four classes with a minority class (less than 1%), 
+This project aims to implement two algorithms to crop and extract text fields from any document, and deploy in a web app using FastAPI and DOCKER.
+
+- The first technique is a SIFT model (scale-invariant feature transform), a model used to identify similar elements between different images.
+
+
+- The second is a model based on Kmeans for clusturing to segment the image into many blocs/objects, then we detect the countour's document and rotate it based on its letter orientation. 
+
  </br>
 
  
 
 ## :rocket: Repository Structure
 The repository contains the following files & directories:
-- **Dataset directory:** It contains a data pre-processing notebook where the train.csv file is used for training 
-the model. Il contains also the predictions of test.csv dataframe.
-- **model_weights:** It contains all the weights of the models : one-hot-encoder, target encoder, random forest model.
+- **docker directory:** : The folder contains the webapp files as well as the dockerfile and requirements.txt needed to deploy with Docker. The web application was developed using FastAPI for the Back-End, and HTML/CSS/Javascript code for the Front-End.
 
-- **App directory:** Code for the web application that was developed for the model deployment. It contains Flask API code for the Back-End,
-and HTML/CSS/Javascript code for the Front-End.
+
+- **crop_ocr_documents.ipynb :** Is the script where we detail the two techniques for cropping and extracting text fields from documents
+
+- **images directory:** The folder contains the images used on the notebook.
 
 
 ![](last_gif.gif)
 
 ## :chart_with_upwards_trend: Performance & results
 
-- The test dataset contains **25 000 samples**. Each sample contains many features, and its corresponding label.
 
-- The model used for this multi-class classification task is a **Random Forest** model.
 
-- The metric used to measure the model's performance is **F1-score**. After testing the model, I obtained a test F1-score of **72 %**
+The SIFT method does not crop all documents, especially when the scans are not of a good quality, while the second script which is based on the kmeans algorithm crops and extracts the text fields from any document. 
 
+
+ 
+We tested the algorithms on 300 tax notices
 
 
 
