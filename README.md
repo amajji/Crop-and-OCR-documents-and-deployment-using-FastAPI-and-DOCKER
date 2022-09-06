@@ -1,9 +1,5 @@
 # Crop-and-OCR-documents-and-deployment-using-FastAPI-and-DOCKER-
 
-
-
-
-# Multiclass classification.
 Data scientist | [Anass MAJJI](https://www.linkedin.com/in/anass-majji-729773157/)
 ***
 
@@ -35,11 +31,14 @@ The repository contains the following files & directories:
 
 
 
-The SIFT method does not crop all documents, especially when the scans are not of a good quality, while the second script which is based on the kmeans algorithm crops and extracts the text fields from any document. 
+we tested the model on 300 tax notices. The SIFT method does not crop all documents, especially when the scans are not of a good quality, while the second script which is based on the kmeans algorithm crops and extracts the text fields from any document. 
 
 
- 
-We tested the algorithms on 300 tax notices
+<p float="left">
+  <img src="images/1__1_v2.png" width="100" />
+  <img src="images/corners_v2.png" width="100" /> 
+</p>
+
 
 
 
