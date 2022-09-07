@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title> </title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+
+
+<link rel="stylesheet" href="{{ url_for('static', path='css/window_download.css') }}" />
+
+
+
+    <meta charset="utf-8">
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+
+
+
+
+
+</head>
+<!-- <body style="background: rgba(0, 0, 170, 0.1);"> -->
+<body >
+
+
+
+
+
+
+    <h3   style = ' text-align:center; color: #1E90FF; font-size: 50px; margin:10px auto;'> Crop and extract text fields from your documents   </h3>
+    <h3   style = ' text-align:center; color: #f0f8ff; font-size: 30px; margin:10px auto;'> This app helps you to extract informations from any scanned document</h3>
+
+
+    <!-- <div   style = 'display:flex;   width : 140px; height: 140px; margin:10px auto;  ' > <img src="analye_doc.jpg" > </div> -->
+
+<h3 style = '   text-align:center; color: #f0f8ff; text-decoration: underline;  font-size: 25px;   margin:0px auto;'> Download the model result</h3>
+
+
+<div  style = 'display:flex;  margin-bottom: 2%;   width : 20%; height: 20%;      ' onclick="window.location.href='{{ url_for('download') }}'" >
+<div class="container-fluid" >
+	<div class="row">
+		<div id="ms-container">
+			<label for="ms-download">
+				<div class="ms-content">
+					<div class="ms-content-inside">
+						<input type="checkbox" id="ms-download" />
+						<div class="ms-line-down-container">
+							<div class="ms-line-down"></div>
+						</div>
+						<div class="ms-line-point"></div>
+					</div>
+				</div>
+			</label>
+		</div>
+	</div>
+</div>
+</div>
+
+
+
+<button class="custom-btn btn-11" style = ' display:flex; margin: auto; margin-top: 15%; margin-bottom: 1%;  width : 10%; height: 5%;   color: #2980b9 ;' onclick="window.location.href='{{ url_for('Acceuil') }}'" >Accueil</button>
+
+
+
+
+    <div class="img1"  > <img src="{{ url_for('static',path='css/anass.jpg') }}" style = ' display:flex;   width : 140px; height: 160px; margin: auto;   border-radius: 50%; border: 5px solid #555; '> </div>
+    <h3   style = ' text-align:center; color: #f0f8ff; font-size: 20px; margin: 10px auto;  '>  By MAJJI Anass</h3>
+    <h3   style = ' text-align:center; color: #f0f8ff; font-size: 20px; margin: auto;  '>  Data Scientist </h3>
+
+
+</body>
+
+ <head>
+ <script src="upload.js"></script>
+</head>
+
+</html>
+
+
+
+<!--  https://bashooka.com/coding/css-javascript-file-upload-examples/  -->
