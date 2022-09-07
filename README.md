@@ -31,9 +31,9 @@ The repository contains the following files & directories:
 To launch the deployment of the webapp with docker, type the following commands : 
 
 
- - docker build -t webapp_ocr .   : to build the docker image
+ - **docker build -t webapp_ocr .**  : to build the docker image
 
- - docker run -p 8000:80 webapp_ocr:latest  : to launch the container based on our image
+ - **docker run -p 8000:80 webapp_ocr:latest** : to launch the container based on our image
 
  If we visit http://127.0.0.1:8000/, we'll get our webapp deployed.
 
@@ -44,9 +44,9 @@ Below the demonstration:
 
 In order to track the webapp's logs in the docker container, type the following command to explore the container state: 
 
-sudo docker exec -t -i ID_CONTAINER /bin/bash
+ - **sudo docker exec -t -i ID_CONTAINER /bin/bash**
 
-Then logs are stored in the logfile.log as shown bellow : 
+Then logs are stored in the **logfile.log** as shown bellow : 
 <p float="left">
   <img src="images/logs.png" width="400" />
 </p>
@@ -57,7 +57,7 @@ Then logs are stored in the logfile.log as shown bellow :
 
 
 
-we tested the model on 300 tax notices. The SIFT method does not crop all documents, especially when the scans are not in a good quality, while the second script which is based on the kmeans algorithm crops and extracts the text fields from any document. 
+we tested the models on 300 tax notices. The SIFT method does not crop all documents, especially when the scans are not in a good quality, while the second script which is based on the kmeans algorithm crops and extracts the text fields from any document. 
 
 
 <p float="left">
