@@ -48,7 +48,7 @@ In order to track the webapp's logs in the docker container, type the following 
 
 Then logs are stored in the **logfile.log** as shown bellow : 
 <p float="left">
-  <img src="images/logs.png" width="400" />
+  <img src="images/logs.png" width="500" />
 </p>
 
 
