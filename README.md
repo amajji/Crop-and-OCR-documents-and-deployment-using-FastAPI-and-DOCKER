@@ -44,7 +44,7 @@ Below the demonstration:
 
 In order to track the webapp's logs in the docker container, type the following command to explore the container state: 
 
- - **sudo docker exec -t -i ID_CONTAINER /bin/bash**
+ - **docker exec -t -i ID_CONTAINER /bin/bash**
 
 Then logs are stored in the **logfile.log** as shown bellow : 
 <p float="left">
