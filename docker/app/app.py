@@ -1,7 +1,23 @@
+############################################################################################################################
+#                                  Author: Anass MAJJI                                                                     #
+#                               File Name: app/app.py                                                                      #
+#                           Creation Date: september 01, 2022                                                              #
+#                         Source Language: Python                                                                          #
+#         Repository:    https://github.com/amajji/Crop-and-OCR-documents-and-deployment-using-FastAPI-and-DOCKER.git      #
+#                              --- Code Description ---                                                                    #
+#                         FastAPI code for the model deployment                                                            #
+############################################################################################################################
+
+
+
+
+
+############################################################################################################################
+#                                                 Packages                                                                 #
+############################################################################################################################
+
 from app.schemas import GETPATH
 import io
-
-# import pytesseract
 import re
 import time
 import cv2
@@ -13,10 +29,8 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 import numpy as np
 from pdf2image import convert_from_path, convert_from_bytes
-
 from fastapi.logger import logger
 import logging
-
 try:
     from PIL import Image
 except ImportError:
@@ -29,8 +43,12 @@ from sklearn.cluster import KMeans
 
 
 
+##########################################################################################################################
+#                                                 Main Code                                                              #
+##########################################################################################################################
 
-############ Define logging file #############################
+
+# Define logging file #
 """
 logger = logging.getLogger()
 #logger.setLevel(logging.INFO)
@@ -48,15 +66,8 @@ fh.setFormatter(formatter)
 logger.addHandler(ch) #Exporting logs to the screen
 logger.addHandler(fh) #Exporting logs to a file
 
-
 logger = logging.getLogger(__name__)
 """
-
-
-
-
-
-
 
 
 
