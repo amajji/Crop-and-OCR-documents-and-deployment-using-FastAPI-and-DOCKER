@@ -13,7 +13,6 @@ This project aims to implement two algorithms to crop and extract text fields fr
 
  </br>
 
- 
 
 ## :rocket: Repository Structure
 The repository contains the following files & directories:
